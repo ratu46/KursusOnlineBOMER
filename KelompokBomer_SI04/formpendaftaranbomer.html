@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Kursus Online SMA/MA</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>    
+        <img src="logobomer.png" >
+        <h1>Website Kursus Online SMA/MA</h1>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html#home">Beranda</a></li>
+                <li><a href="index.html#about">Tentang Bomer</a></li>
+                <li><a href="index.html#courses">Kursus</a></li>
+                <li><a href="index.html#price">Biaya</a></li>
+                <li><a href="formpendaftaranbomer.html">Form Pendaftaran</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <h2>Form Pendaftaran Kursus Bomer</h2>
+        <form id="contact-form" class="needs-validation" novalidate>
+            <div class="form-row">
+                <div class="form-group col-md-6 mb-3">
+                    <label for="name">Nama:</label>
+                    <input type="text" class="form-control" id="name" placeholder="Nama" required>
+                    <div class="invalid-feedback">
+                        Nama depan harus diisi.
+                    </div>
+                </div>
+                <div class="form-group col-md-6 mb-3">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control" id="email" placeholder="contoh@emailku.com" required>
+                    <div class="invalid-feedback">
+                        Email tidak valid.
+                    </div>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6 mb-3">
+                    <label for="phone">Nomor Telepon:</label>
+                    <input type="tel" class="form-control" id="phone" placeholder="Contoh: 08xx" required>
+                    <div class="invalid-feedback">
+                        Nomor telepon harus diisi.
+                    </div>
+                </div>
+                <div class="form-group col-md-6 mb-3">
+                    <label for="address">Alamat:</label>
+                    <input type="text" class="form-control" id="address" placeholder="Contoh: Perumahan Pondok Permai B4" required>
+                    <div class="invalid-feedback">
+                        Alamat harus diisi.
+                    </div>
+                </div>
+            </div>
+            <div class="form-group mb-3">
+                <label for="school">Asal Sekolah:</label>
+                <input type="text" class="form-control" id="school" placeholder="nama sekolah" required>
+                <div class="invalid-feedback">
+                    Asal Sekolah harus diisi.
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6 mb-3">
+                    <label for="state">Kelas:</label>
+                    <select class="custom-select d-block w-100" id="state" required>
+                        <option value="">Pilih...</option>
+                        <option>X</option>
+                        <option>XI</option>
+                        <option>XII</option>
+                    </select>
+                    <div class="invalid-feedback">
+                        Pilih kelas yang sesuai.
+                    </div>
+                </div>
+                <div class="form-group col-md-6 mb-3">
+                    <label for="course">Jurusan yang Dipilih:</label>
+                    <select class="custom-select d-block w-100" id="course" required>
+                        <option value="">Umum</option>
+                        <option>Mipa</option>
+                        <option>Ips</option>
+                        <option>Bahasa</option>
+                        <option>MA</option>
+                    </select>
+                    <div class="invalid-feedback">
+                        Pilih jurusan yang sesuai.
+                    </div>
+                </div>
+            </div>
+
+            <div id="mapel-umum" class="mapel form-group mb-3">
+                <label for="umum">Mapel Umum yang Dipilih:</label>
+                <select class="custom-select d-block w-100" id="umum" name="umum">
+                    <option value="pilih">pilih</option>
+                    <option value="matematika">Matematika</option>
+                    <option value="bahasa_indonesia">Bahasa Indonesia</option>
+                    <option value="bahasa_inggris">Bahasa Inggris</option>
+                    <option value="sejarah">Sejarah</option>
+                    <option value="pendidikan_kewarganegaraan">Pendidikan Kewarganegaraan</option>
+                    <option value="seni_budaya">Seni Budaya</option>
+                    <option value="pjok">PJOK</option>
+                    <option value="agama">Agama</option>
+                </select>
+            </div>
+
+            <div id="mapel-mipa" class="mapel form-group mb-3">
+                <label for="mipa">Mapel Mipa yang Dipilih:</label>
+                <select class="custom-select d-block w-100" id="mipa" name="mipa">
+                    <option value="pilih">pilih</option>
+                    <option value="matematika">Matematika</option>
+                    <option value="fisika">Fisika</option>
+                    <option value="kimia">Kimia</option>
+                    <option value="biologi">Biologi</option>
+                </select>
+            </div>
+
+            <div id="mapel-ips" class="mapel form-group mb-3">
+                <label for="ips">Mapel Ips yang Dipilih:</label>
+                <select class="custom-select d-block w-100" id="ips" name="ips">
+                    <option value="pilih">pilih</option>
+                    <option value="geografi">Geografi</option>
+                    <option value="ekonomi">Ekonomi</option>
+                    <option value="sosiologi">Sosiologi</option>
+                    <option value="sejarah">Sejarah</option>
+                </select>
+            </div>
+
+            <div id="mapel-bahasa" class="mapel form-group mb-3">
+                <label for="bahasa">Mapel Bahasa yang Dipilih:</label>
+                <select class="custom-select d-block w-100" id="bahasa" name="bahasa">
+                    <option value="pilih">pilih</option>
+                    <option value="bahasa_indonesia">Bahasa Indonesia</option>
+                    <option value="bahasa_inggris">Bahasa Inggris</option>
+                    <option value="bahasa_asing">Bahasa Asing</option>
+                </select>
+            </div>
+
+            <div id="mapel-ma" class="mapel form-group mb-3">
+                <label for="ma">Mapel MA yang Dipilih:</label>
+                <select class="custom-select d-block w-100" id="ma" name="ma">
+                    <option value="pilih">pilih</option>
+                    <option value="ilmu_al-quran_dan_tafsir">Ilmu Al-Qur`an dan Tafsir</option>
+                    <option value="hadis_dan_ulumul_hadis">Hadis dan Ulumul Hadis</option>
+                    <option value="fiqh">Fiqh</option>
+                    <option value="aqidah_dan_akhlak">Aqidah dan Akhlak</option>
+                    <option value="sejarah_kebudayaan_islam">Sejarah Kebudayaan Islam</option>
+                    <option value="bahasa_arab">Bahasa Arab</option>
+                </select>
+            </div>
+            
+            <div class="form-group mb-3">
+                <label for="message">Pesan:</label>
+                <textarea class="form-control" id="message" name="message" required></textarea>
+                <div class="invalid-feedback">
+                    Pesan harus diisi.
+                </div>
+            </div>
+            
+            <button type="submit" class="btn btn-primary">Kirim</button>
+        </form>
+    </div>
+    <a href="https://wa.me/6285842582327" class="contact-container" target="_blank">
+        <div class="whatsapp-icon"></div>
+        <div>Kontak kami</div>
+    </a>
+    <footer class="text-center">
+        <p>&copy; 2024 Website Kursus Bomer. Semua hak cipta dilindungi.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.3/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
